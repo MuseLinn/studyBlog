@@ -225,7 +225,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-16 21:58:37" itemprop="dateModified" datetime="2020-03-16T21:58:37+08:00">2020-03-16</time>
+                <time title="修改时间：2020-03-16 22:37:26" itemprop="dateModified" datetime="2020-03-16T22:37:26+08:00">2020-03-16</time>
               </span>
 
           
@@ -253,11 +253,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <style type="text/css">
-img{text-align:center;margin:0 auto;width:80%}
-</style>
-
-<p><img src="cover.jpg" alt=""></p>
+          <p><img src="2020-03-14-%E6%95%B0%E5%AD%97%E8%A7%92%E9%A2%91%E7%8E%87%E4%B8%8E%E6%A8%A1%E6%8B%9F%E8%A7%92%E9%A2%91%E7%8E%87%E7%9A%84%E7%90%86%E8%A7%A3/cover.jpg" alt=""></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/studyBlog/2020/03/14/%E6%95%B0%E5%AD%97%E8%A7%92%E9%A2%91%E7%8E%87%E4%B8%8E%E6%A8%A1%E6%8B%9F%E8%A7%92%E9%A2%91%E7%8E%87%E7%9A%84%E7%90%86%E8%A7%A3/#more" rel="contents">
@@ -315,7 +311,7 @@ img{text-align:center;margin:0 auto;width:80%}
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-16 21:46:21" itemprop="dateModified" datetime="2020-03-16T21:46:21+08:00">2020-03-16</time>
+                <time title="修改时间：2020-03-16 22:15:40" itemprop="dateModified" datetime="2020-03-16T22:15:40+08:00">2020-03-16</time>
               </span>
 
           
@@ -343,59 +339,15 @@ img{text-align:center;margin:0 auto;width:80%}
     <div class="post-body" itemprop="articleBody">
 
       
-          <a id="more"></a>
-
-<p>1.时不变系统的概念：若系统的特性和行为不随时间而变，该系统是时不变的。</p>
-<p>2.性质：如果输入信号上有一个时移，而在输出信号产生同样的时移，那么这个系统是时不变的；即若离散时不变系统𝑦[𝑛]是在输入为𝑥[𝑛]时的输出，当输入为𝑥[𝑛−𝑛0]时，输出为𝑦[𝑛−𝑛0]；若连续时间情况下，𝑦[𝑡]是在输入为𝑥[𝑡]时的输出，当输入为𝑥[𝑡−𝑡0]时，输出为𝑦[𝑡−𝑡0]的结果。</p>
-<p>3.下面各式是否是时不变系统</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1)𝑦(𝑛)&#x3D;𝑥(𝑛)𝑠𝑖𝑛(𝜔0𝑛+𝜋4)是否是时不变系统</span><br><span class="line">2)𝑦(𝑛)&#x3D;2𝑥(𝑛)+3</span><br><span class="line">3)𝑦(𝑛)&#x3D;𝑥(2𝑡)</span><br><span class="line">4)𝑦(𝑛)&#x3D;𝑥(−𝑛)</span><br></pre></td></tr></table></figure>
-
-<p>解：<code>出发点：</code>为了确认系统是时不变的，必须判定对于任何输入和任何时移𝑡0，<strong>时不变性</strong>是否成立</p>
-<p>1)令𝑥1(𝑛)是系统的任一输入，则𝑦1(𝑛)=𝑥1(𝑛)𝑠𝑖𝑛(𝜔0𝑛+𝜋4)是其相应的输出</p>
-<p>然后考虑将𝑥1(𝑛)时移作为第二个输入，即𝑥2(𝑛)=𝑥1(𝑛−𝑛0)，对于这个输入的输出是</p>
-<center>𝑦2(𝑛)=𝑥1(𝑛−𝑛0)𝑠𝑖𝑛(𝜔0𝑛+𝜋4)</center>
-
-<p>根据式𝑦1(𝑛)=𝑥1(𝑛)𝑠𝑖𝑛(𝜔0𝑛+𝜋4)可以得到：</p>
-<center>𝑦1(𝑛−𝑛0)=𝑥1(𝑛−𝑛0)𝑠𝑖𝑛(𝜔0（𝑛−𝑛0）+𝜋4)</center>
-
-<p>可以得到：</p>
-<center>𝑦1(𝑛−𝑛0)≠𝑦2(𝑛)</center>
-
-<p>所以𝑦(𝑛)=𝑥(𝑛)𝑠𝑖𝑛(𝜔0𝑛+𝜋4)是时变系统。</p>
-<p>2)令𝑥1(𝑛)是系统的任一输入，则𝑦1(𝑛)=2𝑥1(𝑛)+3是其相应的输出</p>
-<p>然后考虑将𝑥1(𝑛)时移作为第二个输入，即𝑥2(𝑛)=𝑥1(𝑛−𝑛0)，对于这个输入的输出是</p>
-<center>𝑦2(𝑛)=2𝑥1(𝑛−𝑛0)+3</center>
-
-<p>根据式𝑦1(𝑛)=2𝑥1(𝑛)+3可以得到：</p>
-<center>𝑦1(𝑛−𝑛0)=2𝑥1(𝑛−𝑛0)+3</center>
-
-<p>可以得到：</p>
-<center>𝑦1(𝑛−𝑛0)=𝑦2(𝑛)</center>
-
-<p>所以𝑦(𝑛)=2𝑥(𝑛)+3是时不变系统。</p>
-<p>3)令𝑥1(𝑛)是系统的任一输入，则𝑦1(𝑛)=𝑥1(2𝑛)是其相应的输出</p>
-<p>然后考虑将𝑥1(𝑛)时移作为第二个输入，即𝑥2(𝑛)=𝑥1(𝑛−𝑛0)，对于这个输入的输出是</p>
-<center>𝑦2(𝑛)=𝑥1(2𝑛−𝑛0)</center>
-
-<p>根据式𝑦1(𝑛)=𝑥1(2𝑛)可以得到：</p>
-<center>𝑦1(𝑛−𝑛0)=𝑥1(2𝑛−2𝑛0)</center>
-
-<p>可以得到：</p>
-<center>𝑦1(𝑛−𝑛0)≠𝑦2(𝑛)</center>
-
-<p>所以𝑦(𝑛)=𝑥(2𝑛)是时变系统。</p>
-<p>4)令𝑥1(𝑛)是系统的任一输入，则𝑦1(𝑛)=𝑥1(−𝑛)是其相应的输出</p>
-<p>然后考虑将𝑥1(𝑛)时移作为第二个输入，即𝑥2(𝑛)=𝑥1(−𝑛+𝑛0)，对于这个输入的输出是</p>
-<center>𝑦2(𝑛)=𝑥1(−𝑛+𝑛0)</center>
-
-<p>根据式𝑦1(𝑛)=𝑥1(−𝑛)可以得到：</p>
-<center>𝑦1(𝑛−𝑛0)=𝑥1(−（𝑛−𝑛0）)=𝑥1(−𝑛+𝑛0)</center>
-
-<p>可以得到：</p>
-<center>𝑦1(𝑛−𝑛0)=𝑦2(𝑛)</center>
-
-<p>所以𝑦(𝑛)=𝑥(−𝑛)是时不变系统。</p>
-
+          <p>关于时不变系统</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/studyBlog/2020/03/14/%E4%B8%93%E9%A2%98-%E6%97%B6%E4%B8%8D%E5%8F%98%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%A4%E6%96%AD/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
