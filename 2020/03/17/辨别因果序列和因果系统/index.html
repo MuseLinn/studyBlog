@@ -28,7 +28,7 @@
 <meta property="og:description" content="如下">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-17T15:00:50.000Z">
-<meta property="article:modified_time" content="2020-03-17T15:27:11.897Z">
+<meta property="article:modified_time" content="2020-03-23T11:53:06.972Z">
 <meta property="article:author" content="CDUT MorningStar">
 <meta property="article:tag" content="数字信号处理">
 <meta property="article:tag" content="专题">
@@ -220,10 +220,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-03-17 23:00:50 / 修改时间：23:27:11" itemprop="dateCreated datePublished" datetime="2020-03-17T23:00:50+08:00">2020-03-17</time>
+              <time title="创建时间：2020-03-17 23:00:50" itemprop="dateCreated datePublished" datetime="2020-03-17T23:00:50+08:00">2020-03-17</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-23 19:53:06" itemprop="dateModified" datetime="2020-03-23T19:53:06+08:00">2020-03-23</time>
+              </span>
 
           
             <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
@@ -257,8 +263,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>如下
-<a id="more"></a></p>
+        <p>如下</p>
+<a id="more"></a>
 <ol>
 <li>因果序列 </li>
 </ol>
@@ -266,9 +272,7 @@
 <ol start="2">
 <li>因果系统 </li>
 </ol>
-<p>系统 n 时刻的输出只取决于 n 时刻及以前的输入序列，与 n 时刻以后的输入序列无关，
-则该系统具有因果性质，否则是非因果系统。对应于离散和连续两种时间系统。 
-对于 LTI 系统，其因果性的充要条件是系统的单位脉冲响应$ℎ(𝑛)=0, n&lt;0$。</p>
+<p>系统 n 时刻的输出只取决于 n 时刻及以前的输入序列，与 n 时刻以后的输入序列无关，<br>则该系统具有因果性质，否则是非因果系统。对应于离散和连续两种时间系统。<br>对于 LTI 系统，其因果性的充要条件是系统的单位脉冲响应$ℎ(𝑛)=0, n&lt;0$。</p>
 
     </div>
 
@@ -530,6 +534,59 @@
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
