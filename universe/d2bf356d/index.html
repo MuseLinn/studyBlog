@@ -32,8 +32,8 @@
 <meta property="article:modified_time" content="2020-04-02T03:14:50.779Z">
 <meta property="article:author" content="CDUT MorningStar">
 <meta property="article:tag" content="数字信号处理">
-<meta property="article:tag" content="专题">
 <meta property="article:tag" content="系统">
+<meta property="article:tag" content="专题">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://nikejasonlyz.github.io/studyBlog/universe/d2bf356d/">
@@ -146,6 +146,11 @@
         <li class="menu-item menu-item-cdut">
 
     <a href="http://www.aao.cdut.edu.cn/" rel="noopener" target="_blank"><i class="fa fa-fw fa-calendar"></i>CDUT</a>
+
+  </li>
+        <li class="menu-item menu-item-books">
+
+    <a href="/studyBlog/books/" rel="section"><i class="fa fa-fw fa-fas fa-book"></i>资料</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -265,9 +270,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>关于时不变系统</p>
-<a id="more"></a>
-
+        <p>关于时不变系统
+<a id="more"></a></p>
 <p>1.时不变系统的概念：若系统的特性和行为不随时间而变，该系统是时不变的。</p>
 <p>2.性质：如果输入信号上有一个时移，而在输出信号产生同样的时移，那么这个系统是时不变的；即若离散时不变系统$y[n]$是在输入为$x[n]$时的输出，当输入为$x[n-n_0]$时，输出为$y[n-n_0]$；若连续时间情况下，$y[t]$是在输入为$x[t]$时的输出，当输入为$x[t-t_0]$时，输出为$y[t-t_0]$的结果。</p>
 <p>3.常见的时不变系统和时变系统</p>
@@ -297,40 +301,66 @@
 <blockquote>
 <p>4)$𝑦(𝑛)=𝑥(−𝑛)$</p>
 </blockquote>
-<p>解：<code>出发点：</code>为了确认系统是时不变的，必须判定对于任何输入和任何时移$t_0$，<strong>时不变性</strong>是否成立；判断步骤：（1）输入信号$x_1(n-n_0)$先时移→$x_2$→进入系统$y_2(n)$；（2）输入信<br>号$x_1(n)$先进入系统→$y_1(n)$→再时移$y_1(n-n_0)$；（3）比较$y_1(n)$与$y_2(n)$，如果<br>$y_1(n)=y_2(n)$，则是时不变系统，否则是时变系统。 </p>
+<p>解：<code>出发点：</code>为了确认系统是时不变的，必须判定对于任何输入和任何时移$t_0$，<strong>时不变性</strong>是否成立；判断步骤：（1）输入信号$x_1(n-n_0)$先时移→$x_2$→进入系统$y_2(n)$；（2）输入信
+号$x_1(n)$先进入系统→$y_1(n)$→再时移$y_1(n-n_0)$；（3）比较$y_1(n)$与$y_2(n)$，如果
+$y_1(n)=y_2(n)$，则是时不变系统，否则是时变系统。 </p>
 <p><strong>注意理解判断步骤里的先时移和先系统的含义！！</strong></p>
 <p><strong>注意常出现的尺度变换、翻转和平移只针对变量 n。</strong></p>
 <p>1)令$x_1(n)$是系统的任一输入，则$y(n)=x(n)sin({\omega}_0n+{\frac {\pi}{4}})$是其相应的输出</p>
 <p>然后考虑将$x_1(n)$时移作为第二个输入，即$x_2(n)=x_1(n-n_0)$，对于这个输入的输出是</p>
-<p>$$<br>y_2(n)=x_1(n-n_0)sin({\omega}_0n+{\frac {\pi}{4}})<br>$$</p>
+<p>$$
+y_2(n)=x_1(n-n_0)sin({\omega}_0n+{\frac {\pi}{4}})
+$$</p>
 <p>根据式$y_1(n)=x_1(n)sin({\omega}_0n+{\frac {\pi}{4}})$可以得到：</p>
-<p>$$<br>y_1(n-n_0)=x_1(n-n_0)sin({\omega}_0(n-n_0)+{\frac {\pi}{4}})<br>$$</p>
+<p>$$
+y_1(n-n_0)=x_1(n-n_0)sin({\omega}_0(n-n_0)+{\frac {\pi}{4}})
+$$</p>
 <p>可以得到：</p>
-<p>$$<br>y_1(n-n_0) \neq y_2(n)<br>$$</p>
+<p>$$
+y_1(n-n_0) \neq y_2(n)
+$$</p>
 <p>所以$y(n)=x(n)sin({\omega}_0n+{\frac {\pi}{4}})$是时变系统。</p>
 <p>2)令$x_1(n)$是系统的任一输入，则$y_1(n)=2x_1(n)+3$是其相应的输出</p>
 <p>然后考虑将$x_1(n)$时移作为第二个输入，即$x_2(n)=x_1(n-n_0)$，对于这个输入的输出是</p>
-<p>$$<br>y_2(n)=2x_2(n-n_0)+3<br>$$</p>
+<p>$$
+y_2(n)=2x_2(n-n_0)+3
+$$</p>
 <p>根据式$y_1(n)=2x_1(n)+3$可以得到：</p>
-<p>$$<br>y_1(n-n_0)=2x_1(n-n_0)+3<br>$$</p>
+<p>$$
+y_1(n-n_0)=2x_1(n-n_0)+3
+$$</p>
 <p>可以得到：</p>
-<p>$$<br>y_1(n-n_0)=y_2(n)<br>$$</p>
+<p>$$
+y_1(n-n_0)=y_2(n)
+$$</p>
 <p>所以$y(n)=2x(n)+3$是时不变系统。</p>
 <p>3)令$x_1(n)$是系统的任一输入，则$y_1(n)=x_1(2n)$是其相应的输出</p>
 <p>然后考虑将$x_1(n)$时移作为第二个输入，即$x_2(n)=x_1(n-n_0)$，对于这个输入的输出是</p>
-<p>$$<br>y_2(n)=x_1(2n-n_0)<br>$$</p>
+<p>$$
+y_2(n)=x_1(2n-n_0)
+$$</p>
 <p>根据式$y_1(n)=x_1(2n)$可以得到：</p>
-<p>$$<br>y_1(n-n_0)=x_1(2n-2n_0)<br>$$</p>
+<p>$$
+y_1(n-n_0)=x_1(2n-2n_0)
+$$</p>
 <p>可以得到：</p>
-<p>$$<br>y_1(n-n_0) \neq y_2(n)<br>$$</p>
+<p>$$
+y_1(n-n_0) \neq y_2(n)
+$$</p>
 <p>所以$y(n)=x(2n)$是时变系统。</p>
 <p>4)令$x_1(n)$是系统的任一输入，则$y_1(n)=x_1(-n)$是其相应的输出</p>
 <p>然后考虑将$x_1(n)$时移作为第二个输入，即$x_2(n)=x_1(n-n_0)$，对于这个输入的输出是</p>
-<p>$$<br>y_2(n)=x_1(-n-n_0)<br>$$</p>
+<p>$$
+y_2(n)=x_1(-n-n_0)
+$$</p>
 <p>根据式$y_1(n)=x_1(-n)$可以得到：</p>
-<p>$$<br>y_1(n-n_0)=x_1(-(n-n_0))=x_1(-n+n_0)<br>$$</p>
+<p>$$
+y_1(n-n_0)=x_1(-(n-n_0))=x_1(-n+n_0)
+$$</p>
 <p>可以得到：</p>
-<p>$$<br>{y_1(n-n_0)}\neq{y_2(n)}<br>$$</p>
+<p>$$
+{y_1(n-n_0)}\neq{y_2(n)}
+$$</p>
 <p>所以$y(n)=x(-n)$是时变系统。</p>
 
     </div>
@@ -359,8 +389,8 @@
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/studyBlog/tags/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/" rel="tag"># 数字信号处理</a>
-              <a href="/studyBlog/tags/%E4%B8%93%E9%A2%98/" rel="tag"># 专题</a>
               <a href="/studyBlog/tags/%E7%B3%BB%E7%BB%9F/" rel="tag"># 系统</a>
+              <a href="/studyBlog/tags/%E4%B8%93%E9%A2%98/" rel="tag"># 专题</a>
           </div>
 
         
