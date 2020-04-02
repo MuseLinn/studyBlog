@@ -2,19 +2,19 @@
 <search>
   <entry>
     <title>专题4-Z变换收敛域（ROC）及因果序列</title>
-    <url>/studyBlog/2020/04/02/Z%E5%8F%98%E6%8D%A2%E6%94%B6%E6%95%9B%E5%9F%9F%E5%8F%8A%E5%9B%A0%E6%9E%9C%E5%BA%8F%E5%88%97/</url>
+    <url>/studyBlog/universe/34ee9777/</url>
     <content><![CDATA[<center>正文如下<center/>
 <a id="more"></a>
 
 <br>
 
-<div class="pdf" target="https://nikejasonlyz.github.io/studyBlog/2020/04/02/Z变换收敛域及因果序列/Z变换收敛域及因果序列.pdf" height=""></div>
+<div class="pdf" target="https://nikejasonlyz.github.io/studyBlog/files/Z变换收敛域及因果序列.pdf" height=""></div>
 
 <br>]]></content>
   </entry>
   <entry>
     <title>专题2-辨别因果序列和因果系统</title>
-    <url>/studyBlog/2020/03/17/%E8%BE%A8%E5%88%AB%E5%9B%A0%E6%9E%9C%E5%BA%8F%E5%88%97%E5%92%8C%E5%9B%A0%E6%9E%9C%E7%B3%BB%E7%BB%9F/</url>
+    <url>/studyBlog/universe/ae946e87/</url>
     <content><![CDATA[<p>如下</p>
 <a id="more"></a>
 <ol>
@@ -33,9 +33,11 @@
   </entry>
   <entry>
     <title>专题-数字角频率与模拟角频率的理解（转载）</title>
-    <url>/studyBlog/2020/03/14/%E6%95%B0%E5%AD%97%E8%A7%92%E9%A2%91%E7%8E%87%E4%B8%8E%E6%A8%A1%E6%8B%9F%E8%A7%92%E9%A2%91%E7%8E%87%E7%9A%84%E7%90%86%E8%A7%A3/</url>
-    <content><![CDATA[<img src="/studyBlog/2020/03/14/%E6%95%B0%E5%AD%97%E8%A7%92%E9%A2%91%E7%8E%87%E4%B8%8E%E6%A8%A1%E6%8B%9F%E8%A7%92%E9%A2%91%E7%8E%87%E7%9A%84%E7%90%86%E8%A7%A3/cover.jpg" class="" title="[Ω&lt;&gt;ω]">
+    <url>/studyBlog/universe/9a44afed/</url>
+    <content><![CDATA[<img src="/studyBlog/universe/9a44afed/cover.jpg" class="" title="[Ω&lt;&gt;ω]">
+
 <a id="more"></a>
+
 <p>我们之前的课程接触最多的是模拟频率f，包括在模拟电路、高频电路以及传感器课程上，都是以f作为频率响应函数的横坐标。使用f的好处是其真实反映了实际系统的工作情况，从0到∞，反映了实际模拟信号振荡速度的快慢。</p>
 <p>模拟角频率Ω=2πf，过去我们常将ω作为模拟角频率，写成cos(ωt)，这种写法实际上是不正确的，应该写成cos(Ωt)来描述模拟余弦函数。此时Ω的取值也是从0到∞，这体现出模拟（角）频率没有周期性的特点。</p>
 <p>数字角频率ω则是完全颠覆了我们过往对于频率的认识，首先要明确的是数字信号的获得是通过对模拟信号采样的方式。它的引入可以从cos(Ωt)开始。cos(Ωt)中相位变化一个周期(2π)所需的时间为T，那么模拟角频率定义成Ω=2π/T。对于该余弦信号，采样之后变成了一个离散的数字序列，此时再谈论过了多少时间走完一个周期已经没有意义，而是过了间隔N相位刚好变化一个周期。因此数字角频率推导出为ω=2π/N，余弦信号则为cos(ωn)。既然N是由对应一段时间T采样而来，那么N=T*Fs (Fs为采样率)，自然而然，ω=Ω/Fs。简单来说，数字角频率ω是模拟角频率Ω对于采样率Fs的归一化，这是数字角频率ω的核心要义。</p>
@@ -54,13 +56,13 @@
 ]]></content>
       <tags>
         <tag>数字信号处理</tag>
-        <tag>角频率</tag>
         <tag>专题</tag>
+        <tag>角频率</tag>
       </tags>
   </entry>
   <entry>
     <title>专题1-时不变系统的判断</title>
-    <url>/studyBlog/2020/03/14/%E6%97%B6%E4%B8%8D%E5%8F%98%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%A4%E6%96%AD/</url>
+    <url>/studyBlog/universe/d2bf356d/</url>
     <content><![CDATA[<p>关于时不变系统</p>
 <a id="more"></a>
 
@@ -131,15 +133,15 @@
 ]]></content>
       <tags>
         <tag>数字信号处理</tag>
-        <tag>专题</tag>
         <tag>系统</tag>
+        <tag>专题</tag>
       </tags>
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/studyBlog/2020/03/07/hello-world/</url>
+    <url>/studyBlog/universe/4a17b156/</url>
     <content><![CDATA[<p>Welcome to studyBlog! This is our very first post. If you have interest or get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info.</p>
-<h3><a name="-" class="anchor" href="#-"><span class="header-link"></span></a>有话说</h3><hr>
+<h3 id="有话说"><a href="#有话说" class="headerlink" title="有话说"></a>有话说</h3><hr>
 <p><code>Hello World</code>，工科生都熟悉的一句话，它标志着新征程，它让我们开始用智慧向世界问好。</p>
 <blockquote>
 <p>这个博客建立的初衷呢，是为了更好地为老师同学提供干净便于管理的学习型交流小站，在今后的学习中，会和赵老师一起不断完善优化，补充学习资源，提升体验。也欢迎各位同学加入建设。</p>
