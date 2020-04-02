@@ -5,10 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.2.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/studyBlog/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/studyBlog/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/studyBlog/images/favicon-16x16-next.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/studyBlog/images/apple-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/studyBlog/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/studyBlog/images/favicon-16x16.png">
   <link rel="mask-icon" href="/studyBlog/images/logo.svg" color="#222">
+  <link rel="manifest" href="/studyBlog/images/manifest.json">
+  <meta name="msapplication-config" content="/studyBlog/images/browserconfig.xml">
 
 <link rel="stylesheet" href="/studyBlog/css/main.css">
 
@@ -20,7 +22,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"nikejasonlyz.github.io","root":"/studyBlog/","scheme":"Mist","version":"7.7.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"nikejasonlyz.github.io","root":"/studyBlog/","scheme":"Mist","version":"7.7.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="该小屋搭建以实现平台资料分享和学习讨论，目前仍在不断完善优化。 评论区采用基于leancloud的valine，支持markdown语法 同时设立了快捷的线上聊天室进行快捷讨论交流，点击右下角OPEN CHAT即可进入。 如有建议或对小屋感兴趣的朋友可以在底下评论区留言或左侧小窗联系~  小屋动态   2020-03-09 接入tidio服务，可从侧边栏或左下角触发，便于一对一对话 2020-03">
@@ -31,7 +33,7 @@
 <meta property="og:description" content="该小屋搭建以实现平台资料分享和学习讨论，目前仍在不断完善优化。 评论区采用基于leancloud的valine，支持markdown语法 同时设立了快捷的线上聊天室进行快捷讨论交流，点击右下角OPEN CHAT即可进入。 如有建议或对小屋感兴趣的朋友可以在底下评论区留言或左侧小窗联系~  小屋动态   2020-03-09 接入tidio服务，可从侧边栏或左下角触发，便于一对一对话 2020-03">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-08T23:38:21.000Z">
-<meta property="article:modified_time" content="2020-03-23T11:51:36.452Z">
+<meta property="article:modified_time" content="2020-04-02T09:32:12.224Z">
 <meta property="article:author" content="CDUT MorningStar">
 <meta name="twitter:card" content="summary">
 
@@ -238,6 +240,7 @@
 <li><code>2020-03-09</code> 引入<strong>DarkMode</strong>，跟随设备自然改变明暗主题 <code>存在部分设备无效，暂未处理</code></li>
 <li><code>2020-03-16</code> 修复图片显示，调整路径检索</li>
 <li><code>2020-03-23</code> 修复<code>mathjax</code>数学公式渲染问题</li>
+<li><code>2020-04-02</code> 采用pdfobject.min.js和pdf.js实现pdf预览和操作工具</li>
 </ul>
 
       </div>
@@ -307,6 +310,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="CDUT MorningStar"
+      src="/studyBlog/images/avatar.png">
   <p class="site-author-name" itemprop="name">CDUT MorningStar</p>
   <div class="site-description" itemprop="description">StayHungry StayFoolish</div>
 </div>
@@ -384,6 +389,8 @@
   </span>
   <span class="author" itemprop="copyrightHolder">CDUT MorningStar</span>
 </div>
+  <div class="theme-info">主题 – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
 
         
 <div class="busuanzi-count">
