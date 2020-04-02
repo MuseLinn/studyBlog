@@ -34,8 +34,7 @@
   <entry>
     <title>专题-数字角频率与模拟角频率的理解（转载）</title>
     <url>/studyBlog/universe/9a44afed/</url>
-    <content><![CDATA[<img src="/studyBlog/universe/9a44afed/cover.jpg" class="" title="[Ω&lt;&gt;ω]">
-
+    <content><![CDATA[<p><img src="cover.jpg" alt="Ω&lt;&gt;ω"></p>
 <a id="more"></a>
 
 <p>我们之前的课程接触最多的是模拟频率f，包括在模拟电路、高频电路以及传感器课程上，都是以f作为频率响应函数的横坐标。使用f的好处是其真实反映了实际系统的工作情况，从0到∞，反映了实际模拟信号振荡速度的快慢。</p>
