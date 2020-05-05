@@ -158,7 +158,7 @@ $$</p>
     <title>Hello World（前言）</title>
     <url>/studyBlog/universe/4a17b156/</url>
     <content><![CDATA[<p>Welcome to studyBlog! This is our very first post. If you have interest or get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info.</p>
-<h3><a name="-" class="anchor" href="#-"><span class="header-link"></span></a>有话说</h3><hr>
+<h3 id="有话说"><a href="#有话说" class="headerlink" title="有话说"></a>有话说</h3><hr>
 <p><code>Hello World</code>，工科生都熟悉的一句话，它标志着新征程，它让我们开始用智慧向世界问好。</p>
 <blockquote>
 <p>这个博客建立的初衷呢，是为了更好地为老师同学提供干净便于管理的学习型交流小站，在今后的学习中，会和赵老师一起不断完善优化，补充学习资源，提升体验。也欢迎各位同学加入建设。</p>
