@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>专题4-Z变换收敛域（ROC）及因果序列</title>
+    <title>专题4-Z变换收敛域（ROC）及因果序列+习题</title>
     <url>/studyBlog/universe/34ee9777/</url>
     <content><![CDATA[<p><center>正文如下<center/>
 <a id="more"></a></p>
 <p><br></p>
 <div class="pdf" target="https://nikejasonlyz.github.io/studyBlog/files/Z变换收敛域及因果序列.pdf" height=""></div>
+<p><br></p>
+<h3><a name="z-" class="anchor" href="#z-"><span class="header-link"></span></a>Z变换习题</h3><p><br></p>
+<div class="pdf" target="https://nikejasonlyz.github.io/studyBlog/files/Z变换习题.pdf" height=""></div>
 <p><br></p>
 <p>若您使用安卓设备无法查阅，可点击此处<a href="https://nikejasonlyz.github.io/studyBlog/files/Z变换收敛域及因果序列.pdf">Z变换收敛域及因果序列</a></p>
 ]]></content>
@@ -152,14 +155,15 @@ $$</p>
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
+    <title>Hello World（前言）</title>
     <url>/studyBlog/universe/4a17b156/</url>
     <content><![CDATA[<p>Welcome to studyBlog! This is our very first post. If you have interest or get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info.</p>
-<h3 id="有话说"><a href="#有话说" class="headerlink" title="有话说"></a>有话说</h3><hr>
+<h3><a name="-" class="anchor" href="#-"><span class="header-link"></span></a>有话说</h3><hr>
 <p><code>Hello World</code>，工科生都熟悉的一句话，它标志着新征程，它让我们开始用智慧向世界问好。</p>
 <blockquote>
 <p>这个博客建立的初衷呢，是为了更好地为老师同学提供干净便于管理的学习型交流小站，在今后的学习中，会和赵老师一起不断完善优化，补充学习资源，提升体验。也欢迎各位同学加入建设。</p>
 </blockquote>
+<p><strong>有关资料和习题可直接在<a href="https://nikejasonlyz.github.io/studyBlog/books/">资料</a>页面进行下载访问</strong></p>
 <center>-- 编辑于2020-03-09 --</center>
 
 <p>了解到有同学想动动手搭博客，可移步参考<a href="https://nikejasonlyz.github.io/2019/01/12/%E4%B8%AA%E4%BA%BABlog%E6%90%AD%E5%BB%BA%E5%9B%9E%E9%A1%BE/">此处</a></p>
